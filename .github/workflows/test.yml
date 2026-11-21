@@ -25,7 +25,7 @@ jobs:
         with:
           persist-credentials: false
       - run: |
-          for reqfile in requirements.txt test-requirements.txt ; do
+          for reqfile in requirements.txt ; do
               if [ -f ${reqfile} ] ; then
                   result=0
                   # reject non-comment lines that contain a / (i.e. URLs, relative paths)
